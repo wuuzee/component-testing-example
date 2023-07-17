@@ -10,6 +10,7 @@ export class TestComponentHarness extends ComponentHarness {
     }
   }
 
+  /** Имитирует клик по радиобаттону*/
   public async clickRadiobutton(key: number): Promise<void> {
     const radiobutton: TestElement = await this.locatorFor('input[id=hero' + key + ']')();
     return await radiobutton.click();
@@ -19,8 +20,4 @@ export class TestComponentHarness extends ComponentHarness {
     const checkbox: TestElement = await this.locatorFor('input[id=property' + key + ']')();
     await checkbox.click();
   }
-
-
-
-
 }

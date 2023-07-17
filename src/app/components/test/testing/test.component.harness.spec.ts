@@ -1,4 +1,3 @@
-import { fakeAsync } from '@angular/core/testing';
 import { TestComponent } from '../test.component';
 import { getHeroes, getHeroesProperties, getProperties } from '../../mocks/test-data';
 import { createHostFactory, SpectatorHost } from '@ngneat/spectator';

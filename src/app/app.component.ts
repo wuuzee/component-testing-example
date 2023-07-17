@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { getHeroes, getHeroesProperties, getProperties } from './components/mocks/test-data';
 
 @Component({
@@ -10,8 +10,4 @@ export class AppComponent {
   public checkboxItems: Map<number, string> = getProperties();
   public radioItems: Map<number, string> = getHeroes();
   public itemsMapping: Map<number, number[]> = getHeroesProperties();
-
-  // public addKidToTable(kid: IKidWithSelectedPresent) {
-  //   this.processedKids.push(kid);
-  // }
 }
